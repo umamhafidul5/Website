@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background-color: #ffaa86;
+  height: 180px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+footer div {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+footer div:first-child {
+  align-items: center;
+  flex-direction: row;
+}
+footer div:first-child h1 {
+  background-color: #ec9d9d;
+  margin: 0 15px 0 0;
+  padding: 0;
+  font-size: 2.8em;
+  text-align: center;
+  line-height: 90px;
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  border: 8px solid #c4a3a3;
+  border-radius: 50%;
+  letter-spacing: -8px;
+  text-indent: -5px;
+}
+footer div:first-child p {
+  font-size: 1.3em;
+  font-weight: bold;
+  width: min-content;
+}
+footer div:nth-child(2) {
+  justify-content: end;
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer div:nth-child(2) span {
+  margin: 3px 0;
+  display: block;
+}
+footer div:last-child {
+  justify-content: center;
+  align-items: flex-end;
+}
+footer div:last-child span {
+  text-align: center;
+  width: 150px;
+  display: block;
+}
+footer div:last-child div {
+  width: 150px;
+  margin: 10px 0;
+  display: block;
+}
+footer div:last-child div a img {
+  margin: 0 5px;
+  width: 35px;
+}
+
+@media screen and (max-width: 850px) {
+  footer {
+    padding: 0 20px;
+    position: relative;
+  }
+  footer div:nth-child(2) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  footer div:nth-child(2) span {
+    display: inline-block;
+  }
+  footer div:last-child {
+    position: static;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    height: 130px;
+  }
+  footer div:first-child h1 {
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 50px;
+    background-color: #ec9d9d;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 5px solid #c4a3a3;
+    letter-spacing: -5px;
+    text-indent: -3px;
+  }
+  footer div:first-child p {
+    font-size: 0.9em;
+  }
+  footer div:nth-child(2) {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+  }
+  footer div:last-child span {
+    width: 120px;
+    font-size: 0.8em;
+  }
+  footer div:last-child div {
+    width: 120px;
+  }
+  footer div:last-child div a img {
+    margin: 0 3px;
+    width: 20px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
