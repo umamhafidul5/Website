@@ -1,0 +1,84 @@
+input {
+  display: none;
+}
+input:checked ~ .sideBar {
+  transform: translateX(0);
+}
+input:checked ~ .sideBar .strip label {
+  transform: rotate(-135deg);
+}
+
+.sideBar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(122, 120, 120);
+  width: 40%;
+  transform: translateX(-100%);
+  transition: 0.8s;
+}
+.sideBar .strip {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  background-color: rgb(122, 120, 120);
+  width: 50px;
+  height: 50px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  top: 70px;
+  right: -50px;
+}
+.sideBar .strip label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  right: 7px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #777677;
+  box-shadow: 0 0 1px 3px rgba(53, 51, 53, 0.5);
+  transition: 0.5s;
+}
+.sideBar .strip label:active {
+  transform: translateY(1px) translateX(1px);
+}
+.sideBar .strip label:hover {
+  cursor: pointer;
+}
+.sideBar .strip label span {
+  display: block;
+  width: 22px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #353335;
+}
+.sideBar .strip label span:first-child {
+  transform: rotate(0deg) translateY(1.5px);
+}
+.sideBar .strip label span:last-child {
+  transform: rotate(90deg) translateX(-2px);
+}
+.sideBar .container {
+  flex-grow: 1;
+  margin: 5%;
+  background-color: #353335;
+}
+
+@media screen and (max-width: 800px) {
+  .sideBar {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sideBar {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
