@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(66, 61, 61);
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-image: linear-gradient(to left, rgb(25, 71, 25), rgb(8, 190, 180));
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 5px rgba(100, 99, 99, 0.3);
+}
+.card h1 {
+  background-color: rgb(196, 240, 225);
+  position: absolute;
+  z-index: 2;
+  font-size: 1em;
+  border-radius: 10px;
+  padding: 2px 8px;
+  margin-top: 13px;
+  margin-left: 8px;
+  box-shadow: 0 0 1px 2px rgb(8, 190, 180);
+}
+.card img {
+  position: absolute;
+  top: -70%;
+  left: -50%;
+  transition: all 0.3s;
+  animation: rotateWheel 32s cubic-bezier(0.12, -0.34, 0, 1.01) infinite forwards;
+  z-index: 1;
+}
+.card .price {
+  position: absolute;
+  padding: 10px;
+  padding-left: 30px;
+  width: 45%;
+  height: 30px;
+  color: rgb(207, 217, 226);
+  bottom: 30%;
+  right: 0;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 1.8em;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  animation: priceInAndOut 8s infinite forwards;
+}
+
+a {
+  margin-top: 15px;
+  font-size: 0.6em;
+}
+
+@keyframes rotateWheel {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes priceInAndOut {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(100%);
+  }
+  85% {
+    transform: translateX(0);
+  }
+  98% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
