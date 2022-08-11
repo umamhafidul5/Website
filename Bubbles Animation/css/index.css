@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bubbles {
+  position: absolute;
+  width: 8%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.438);
+  color: rgba(22, 22, 22, 0.829);
+  box-shadow: inset -10px -5px 20px 8px rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  box-sizing: border-box;
+}
+.bubbles::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px 4px rgba(255, 255, 255, 0.9);
+  height: 8%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  top: 25%;
+  left: 25%;
+}
+
+/*# sourceMappingURL=index.css.map */
