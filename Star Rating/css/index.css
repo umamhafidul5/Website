@@ -1,0 +1,51 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  display: none;
+}
+input:checked ~ label::before {
+  opacity: 1;
+}
+
+label {
+  position: relative;
+  font-size: 130px;
+  color: #FFD700;
+  cursor: pointer;
+}
+label::before {
+  position: absolute;
+  content: "★";
+  color: #FFD700;
+  opacity: 0;
+}
+label:hover::before, label:hover ~ label::before {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  label {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 350px) {
+  label {
+    font-size: 50px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
