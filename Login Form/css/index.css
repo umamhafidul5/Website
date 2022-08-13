@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(31, 33, 36);
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.btnLogin {
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(98, 98, 216);
+  font-weight: bold;
+  cursor: pointer;
+}
+.btnLogin:hover {
+  background-color: rgb(136, 136, 250);
+}
+.btnLogin:active {
+  transform: translate(0.5px, 0.5px);
+}
+
+.container {
+  position: fixed;
+  height: 500px;
+  width: 400px;
+  background-image: linear-gradient(rgb(139, 203, 219), rgb(63, 27, 161));
+  border-radius: 20px;
+  box-shadow: 0 0 6px 5px rgba(12, 3, 66, 0.7);
+  padding: 20px;
+  display: flex;
+  transform: translateX(var(--xPosTrans));
+  transition: transform 1.8s cubic-bezier(0.6, -0.43, 0.1, 0.9);
+  opacity: 0;
+}
+.container .wrap {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 12px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .wrap img {
+  margin-top: 20px;
+  width: 30%;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.container .wrap .box {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px;
+  gap: 10px;
+}
+.container .wrap .box > input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+}
+.container .wrap .box > label {
+  font-weight: bold;
+  font-size: 1em;
+}
+.container .wrap .box .long1 {
+  font-size: 0.9em;
+}
+.container .wrap .box .long1 > input:checked ~ label {
+  color: beige;
+}
+.container .wrap #login {
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+  height: 40px;
+  background-color: #788adb;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.container .wrap #login:hover {
+  background-color: #a4b5ff;
+}
+.container .wrap #login:active {
+  transform: translate(0.5px, 0.5px);
+}
+.container .wrap .long2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .wrap .long2 > button {
+  font-size: 0.8em;
+  font-weight: 700;
+  padding: 0 10px;
+  height: 35px;
+  background-color: #dbd978;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.container .wrap .long2 > button:hover {
+  background-color: #f7f596;
+}
+.container .wrap .long2 > button:active {
+  transform: translate(0.5px, 0.5px);
+}
+.container .wrap .long2 > span {
+  font-size: 0.7em;
+  color: beige;
+}
+.container .wrap .long2 > span > a {
+  color: rgb(7, 152, 248);
+}
+
+/*# sourceMappingURL=index.css.map */

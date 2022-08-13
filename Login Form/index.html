@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <button class="btnLogin" >Login</button>
+    <div class="container">
+        <div class="wrap">
+            <img src="img/5h_signature_head.png" alt="logo">
+            <div class="box">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="usnm" placeholder="Enter Username" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="pswd" placeholder="Enter Password" required=true>
+                <div class="long1">
+                    <input type="checkbox" name="remember" id="rmbe">
+                    <label for="remember">Remember me</label>
+                </div>
+            </div>
+            <button id="login" type="submit">Login</button>
+            <div class="long2">
+                <button id="cncl">Cancel</button>
+                <span>Forgot <a href="#">password</a> ?</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
